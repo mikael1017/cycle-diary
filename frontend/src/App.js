@@ -7,7 +7,7 @@ import Signup from "./containers/Signup";
 import notFound from "./components/Notfound";
 import { Provider } from "react-redux";
 import store from "./store";
-import "./sass/main.scss";
+//import "./sass/main.scss";
 
 const App = () => (
   <Provider store={store}>

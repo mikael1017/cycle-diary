@@ -12,36 +12,37 @@ const initialState = {
   loading: false,
 };
 
-export default function (state = initialState, action) {
+export default function foo(state = initialState, action) {
   const { type, payload } = action;
-}
-switch (type) {
-  case LOGIN_SUCCESS:
-    localStorage.setItem("token", payload.access);
-    return {
-      ...state,
-      isAuthenticated: true,
-      loading: false,
-      token: payload.success,
-    };
-  case SIGNUP_SUCCESS:
-    return {
-      ...state,
-      isAuthenticated: false,
-      loading: true,
-    };
-  case SIGNUP_FAIL:
 
-  case LOGIN_FAIL:
-
-  case LOGOUT:
-    localStorage.removeItem("token");
-    return {
-      ...state,
-      token: null,
-      isAuthenticated: false,
-      loading: false,
-    };
-  default:
-    return state;
+  switch (type) {
+    case LOGIN_SUCCESS:
+      localStorage.setItem("token", payload.access);
+      return {
+        ...state,
+        isAuthenticated: true,
+        loading: false,
+        token: payload.success,
+      };
+    case SIGNUP_SUCCESS:
+      return {
+        ...state,
+        isAuthenticated: false,
+        loading: true,
+      };
+    case SIGNUP_FAIL:
+      break;
+    case LOGIN_FAIL:
+      break;
+    case LOGOUT:
+      localStorage.removeItem("token");
+      return {
+        ...state,
+        token: null,
+        isAuthenticated: false,
+        loading: false,
+      };
+    default:
+      return state;
+  }
 }
