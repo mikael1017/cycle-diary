@@ -55,13 +55,13 @@ export const signup = ({ name, email, password, password2 }) => async (
     );
 
     dispatch({
-      type: SIGNUP + SUCCESS,
+      type: SIGNUP_SUCCESS,
       payload: res.data,
     });
     dispatch(login(email, password));
   } catch (err) {
     dispatch({
-      type: SINGUP_FAIL,
+      type: SIGNUP_FAIL,
     });
     dispatch(setAlert("Error Authenticating", "error"));
   }
