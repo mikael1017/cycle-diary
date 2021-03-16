@@ -2,7 +2,7 @@ import Layout from "./hocs/Layout";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./containers/Home";
 import About from "./containers/About";
-import Signin from "./containers/Signin";
+import Signin from "./containers/Login";
 import Signup from "./containers/Signup";
 import notFound from "./components/Notfound";
 import { Provider } from "react-redux";
