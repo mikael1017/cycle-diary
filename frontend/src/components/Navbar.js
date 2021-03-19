@@ -8,8 +8,7 @@ import Alert from "./Alert";
 const navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
   const authLinks = (
     <a className="navbar__top__auth__link" onClick={logout} href="#!">
-      {" "}
-      Logout{" "}
+      Logout
     </a>
   );
 
@@ -56,7 +55,7 @@ const navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
           </li>
           <li className="navbar__bottom__item">
             <NavLink className="navbar__bottom__item__link" exact to="/contact">
-              Contact
+              Favorite bikes
             </NavLink>
           </li>
         </div>
