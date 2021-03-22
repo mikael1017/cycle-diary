@@ -1,5 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
+import { Helmet } from "react-helmet";
+import Pagination from "../components/Pagination";
 
-const home = () => <div>home</div>;
+const home = () => {
+  const [diaries, setDiaries] = useState([]);
+};
 
 export default home;
