@@ -45,7 +45,7 @@ const navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
           </li>
           <li className="navbar__bottom__item">
             <NavLink className="navbar__bottom__item__link" exact to="/diary">
-              Diary
+              Trips
             </NavLink>
           </li>
           <li className="navbar__bottom__item">

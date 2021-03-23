@@ -3,5 +3,5 @@ from .views import AddTripView
 
 
 urlpatterns = [
-    path('trip/add/', AddTripView, name="add-trip"),
+    path('add/', AddTripView, name="add-trip"),
 ]
